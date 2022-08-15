@@ -7,6 +7,7 @@ size_t Buffer::ReadableBytes() const {
     return writePos_ - readPos_;
 }
 
+//
 // 可以写的数据大小，缓冲区的总大小 - 写位置
 size_t Buffer::WritableBytes() const {
     return buffer_.size() - writePos_;
